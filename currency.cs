@@ -1,7 +1,7 @@
-// using System;
-class Currency
+using System;
+public class Currency
 {
-    public void convert()
+    void ConvertCurrency()
     {
         // Conversion logic here
         System.Console.WriteLine("Converting currency...");
@@ -30,32 +30,4 @@ class Currency
         }
     }
 
-    static void Main(string[] args)
-    {
-        // Create a new instance of the Currency class
-        var currency = new Currency();
-
-        // Call the convert method to perform currency conversion
-        currency.convert();
-
-        // Print a message indicating the end of the program
-        Console.WriteLine("Currency conversion completed.");
-    }
 }
-
-/* Output:
-
-PS D:\C# Program\class1> dotnet run
-Converting currency...
-Enter the amount in Nepali:
-45000
-Press
- 1 to convert indiaan rupees
- 2 to convert to US dollars
- 3 to convert japanese yen
-2
-Converted amount in Us Dollars: 328.5
-Currency conversion completed.
-PS D:\C# Program\class1>
-
-*/

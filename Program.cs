@@ -56,9 +56,12 @@ public class Program
         // double radius = double.Parse(Console.ReadLine());
         // area.CalculatePerimeter(radius);
 
-        Admin admin = new Admin();
+        // Admin admin = new Admin();
         // Call the ValidateLogin method to check admin credentials
-        admin.ValidateLogin();
+        // admin.ValidateLogin();
 
+        Triangle triangle = new Triangle();
+        // Prompt the user for the dimensions of the triangle   
+        triangle.Display();
     }
 }

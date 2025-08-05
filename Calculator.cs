@@ -1,0 +1,37 @@
+using System.ComponentModel;
+using System.Numerics;
+
+public class Calculator
+{
+    public void Calculate()
+    {
+        Console.WriteLine("Enter first numbers:");
+        double num1 = Convert.ToDouble(Console.ReadLine());
+        Console.WriteLine("Enter second numbers:");
+        double num2 = Convert.ToDouble(Console.ReadLine());
+
+        int i=5;
+        while (i > 1)
+        {
+            Console.WriteLine("Enter an operator (+, -, *, /, %):");
+            char op = Convert.ToChar(Console.ReadLine());
+            double add = num1 + num2;
+            double sub = num1 - num2;
+            double mul = num1 * num2;
+            // double divide = num2 != 0 ? num1 / num2 : throw new DivideByZeroException("Cannot divide by zero.");
+            double mod = num1 % num2;
+
+            double result = op switch
+            {
+                '+' => add,
+                '-' => sub,
+                '*' => mul,
+                '/' => num2 != 0 ? num1 / num2 : throw new DivideByZeroException("Cannot divide by zero."),
+                '%' => mod
+            };
+
+            Console.WriteLine($"Result = {result}");
+            i++;
+        }
+    }
+}

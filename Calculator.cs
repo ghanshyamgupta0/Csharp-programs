@@ -10,8 +10,8 @@ public class Calculator
         Console.WriteLine("Enter second numbers:");
         double num2 = Convert.ToDouble(Console.ReadLine());
 
-        int i=5;
-        while (i > 1)
+        int i = 1;
+        while (i <= 5)
         {
             Console.WriteLine("Enter an operator (+, -, *, /, %):");
             char op = Convert.ToChar(Console.ReadLine());
@@ -33,5 +33,6 @@ public class Calculator
             Console.WriteLine($"Result = {result}");
             i++;
         }
+        Console.WriteLine("Thanks for using my Calculator App");
     }
 }

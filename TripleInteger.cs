@@ -12,7 +12,7 @@ public class TripleInteger
         Console.WriteLine($"The sum is {sum}");
         if (num1 == num2)
         {
-            double result = sum * sum * sum;
+            double result = sum * 3;
 
             Console.WriteLine($"The Triple of the sum is {result}");
         }

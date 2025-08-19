@@ -1,3 +1,5 @@
+// WAP to Find user given numbers of prime numbers.
+
 using System;
 
 public class Nprime
@@ -35,4 +37,5 @@ public class Nprime
             }
         }
     }
+
 }

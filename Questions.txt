@@ -1,0 +1,7 @@
+1. Wap that swaps to rwo integers using the ref keyword. show thatthe values changes outside the method.
+
+2. Wap that calculate the square of a numbers using call by value does the original numbers change?
+
+3. Modify the above program to use call by reference (ref) so the original number gets squared.
+
+4. Write a method that returns the sum and products of two numbers usign out parameters.

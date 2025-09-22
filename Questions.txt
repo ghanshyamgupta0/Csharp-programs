@@ -5,3 +5,7 @@
 3. Modify the above program to use call by reference (ref) so the original number gets squared.
 
 4. Write a method that returns the sum and products of two numbers usign out parameters.
+
+Decribe the .NET framework and its features.
+-> The .Net framework is a software development faramework developed by microsoft. THe .NEtFramework provides a platfrom for building and running applications in windows.
+It includes a large number of class library and a runtime environment to manage program execution.

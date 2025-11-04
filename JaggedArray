@@ -1,0 +1,44 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Create an object array that can hold any type of array
+        object[] mixedArray = new object[3];
+
+        // Store 1D, 2D, and 3D arrays
+        mixedArray[0] = new int[] { 1, 2, 3 };                  // 1D array
+        mixedArray[1] = new int[,] { { 1, 2 }, { 3, 4 } };      // 2D array
+        mixedArray[2] = new int[,,] { { { 1 }, { 2 } } };       // 3D array
+
+        // Access and print each type of array
+        Console.WriteLine("1D Array:");
+        int[] oneD = (int[])mixedArray[0];
+        foreach (int n in oneD)
+            Console.Write(n + " ");
+        Console.WriteLine("\n");
+
+        Console.WriteLine("2D Array:");
+        int[,] twoD = (int[,])mixedArray[1];
+        for (int i = 0; i < twoD.GetLength(0); i++)
+        {
+            for (int j = 0; j < twoD.GetLength(1); j++)
+                Console.Write(twoD[i, j] + " ");
+            Console.WriteLine();
+        }
+        Console.WriteLine();
+
+        Console.WriteLine("3D Array:");
+        int[,,] threeD = (int[,,])mixedArray[2];
+        for (int i = 0; i < threeD.GetLength(0); i++)
+        {
+            for (int j = 0; j < threeD.GetLength(1); j++)
+            {
+                for (int k = 0; k < threeD.GetLength(2); k++)
+                    Console.Write(threeD[i, j, k] + " ");
+                Console.WriteLine();
+            }
+        }
+    }
+}

@@ -6,6 +6,22 @@
 
 4. Write a method that returns the sum and products of two numbers usign out parameters.
 
-Decribe the .NET framework and its features.
--> The .Net framework is a software development faramework developed by microsoft. THe .NEtFramework provides a platfrom for building and running applications in windows.
-It includes a large number of class library and a runtime environment to manage program execution.
+5. print the first, last, middle characters of a string
+
+6. Combine first name and last name into a full name using + and String.Concat
+7. Count vowels in a string 
+    input: "Hello World" -> output: 3 vowels
+
+8. Reverse a string using loop(without built-in Reverse)
+
+9. Palindrome checker 
+    input "level" output: "palindrome"
+
+10. Replace word using string (replace java with c#)
+11. Trim Spaces ( input: Hello output: "He llo" )
+
+12. split a sentences into words 
+    input: "learn C# programming"
+    output: learn
+            C# 
+            programming

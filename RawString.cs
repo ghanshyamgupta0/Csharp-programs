@@ -1,6 +1,4 @@
-19630
-015979000
-Gear lever, wego bel
+
 using System;
 
 class Program
